@@ -139,6 +139,12 @@ int main( int argc, const char* argv[] )
         req.IsFinalPlot  = i == plotCount-1;
 
         plotter->Run( req );
+
+        if( cfg.sleepSeconds )
+        {
+            Log::Line( "Sleeping for %s seconds", cfg.sleepSeconds );
+            sleep(cfg.sleepSeconds);
+        }
     }
 }
 
