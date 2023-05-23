@@ -142,7 +142,7 @@ int main( int argc, const char* argv[] )
 
         if( cfg.sleepSeconds )
         {
-            Log::Line( "Sleeping for %s seconds", cfg.sleepSeconds );
+            Log::Line( "Sleeping for %u seconds", cfg.sleepSeconds );
             sleep(cfg.sleepSeconds);
         }
     }
